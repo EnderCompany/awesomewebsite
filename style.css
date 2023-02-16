@@ -1,0 +1,124 @@
+*,
+body,
+html {
+  background-color: black;
+}
+
+button {
+  position: absolute;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  width: 0px;
+  height: 4vw;
+  font-size: 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
+  animation: shadow 2s infinite;
+  left: 0;
+  top: 250px;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 10px white;
+  }
+  10% {
+    box-shadow: 0 0 10px white, 0 0 20px white;
+  }
+  20% {
+    box-shadow: 0 0 10px white, 0 0 30px white;
+  }
+  30% {
+    box-shadow: 0 0 10px white;
+  }
+  40% {
+    box-shadow: 0 0 10px white, 0 0 20px white;
+  }
+  50% {
+    box-shadow: 0 0 10px white, 0 0 30px white;
+  }
+  60% {
+    box-shadow: 0 0 10px white;
+  }
+  70% {
+    box-shadow: 0 0 10px white, 0 0 20px white;
+  }
+  80% {
+    box-shadow: 0 0 10px white, 0 0 30px white;
+  }
+  90% {
+    box-shadow: 0 0 10px white;
+  }
+  100% {
+    box-shadow: 0 0 10px white, 0 0 20px white;
+  }
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  width: 0;
+  white-space: nowrap;
+  top: 100px;
+  font-size: 3rem;
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+  100%,
+  0% {
+    color: rgb(255, 0, 0);
+  }
+  8% {
+    color: rgb(255, 127, 0);
+  }
+  16% {
+    color: rgb(255, 255, 0);
+  }
+  25% {
+    color: rgb(127, 255, 0);
+  }
+  33% {
+    color: rgb(0, 255, 0);
+  }
+  41% {
+    color: rgb(0, 255, 127);
+  }
+  50% {
+    color: rgb(0, 255, 255);
+  }
+  58% {
+    color: rgb(0, 127, 255);
+  }
+  66% {
+    color: rgb(0, 0, 255);
+  }
+  75% {
+    color: rgb(127, 0, 255);
+  }
+  83% {
+    color: rgb(255, 0, 255);
+  }
+  91% {
+    color: rgb(255, 0, 127);
+  }
+}
+
+@media (min-width: 511px) {
+  button {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) {
+  button {
+    width: 200%;
+    font-size: 2rem;
+    height: 10vh;
+  }
+}
